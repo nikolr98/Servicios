@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    >
+
+    <include layout="@layout/actionbar_toolbar"
+        >
+    </include>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pictureCard"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="60dp"
+        android:elevation="300dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAGAR SERVICIOS"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de documento"
+                    android:layout_marginStart="50dp"
+                    android:entries="@array/tipo"
+                    android:layout_marginVertical="20dp"
+                    android:textStyle="bold" />
+                <Spinner
+                    android:id="@+id/tiposer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:entries="@array/tipo"
+                    android:layout_marginVertical="20dp"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/numerof"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Numero de Factura"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/background_barra"
+                android:padding="15dp"
+                android:inputType="number"
+                android:maxLength="10"
+                />
+            <EditText
+                android:id="@+id/valorf"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginVertical="5dp"
+                android:hint="Digite el valor a pagar"
+                android:background="@drawable/background_barra"
+                android:padding="15dp"
+                android:inputType="number"
+                />
+            <EditText
+                android:id="@+id/valorfc"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginVertical="5dp"
+                android:hint="Confirmar valor a pagar"
+                android:background="@drawable/background_barra"
+                android:padding="15dp"
+                android:inputType="number"
+                android:maxLength="10"
+                />
+            <Button
+                android:id="@+id/pagarf"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Pagar factura"
+                android:background="@drawable/background_barra"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

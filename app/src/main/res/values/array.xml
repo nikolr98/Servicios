@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipo">
+        <item>CENS</item>
+        <item>AGUAS KAPITAL</item>
+        <item>VEOLIA</item>
+        <item>ETC</item>
+    </string-array>
+</resources>

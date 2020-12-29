@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Servicios</string>
+    <string name="hint_user">Nombre de Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="text_button_login">Continuar</string>
+    <string name="sin_cuenta">¿No tienes cuenta?,</string>
+    <string name="crear_cuenta">Crea una aqui.</string>
+    <string name="toolbar_tittle_create">Crear Cuenta</string>
+    <string name="toolbar_tittle_factura">paga tus servicios</string>
+    <string name="Identificacion">Identificación</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="text_button_register">Registrarse</string>
+</resources>

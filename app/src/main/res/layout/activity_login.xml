@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"/>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="300dp"
+        android:id="@+id/pictureCard"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="30dp"
+        android:elevation="300dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAGA TUS SERVICIOS"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginVertical="20dp"
+                android:hint="Correo electronico"
+                android:background="@drawable/background_barra"
+                android:padding="15dp"
+                android:inputType="textEmailAddress"
+                />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="@string/hint_password"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/background_barra"
+                android:padding="15dp"
+                android:inputType="textWebPassword"
+                />
+            <Button
+                android:id="@+id/login"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_button_login"
+                android:background="@drawable/background_barra"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/pictureCard"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/sincuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sin_cuenta"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/cuentaaqui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/crear_cuenta"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/sincuenta">
+
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>
